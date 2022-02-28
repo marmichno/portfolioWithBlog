@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 // mui
-import { Grid, Collapse } from '@mui/material';
+import { Grid } from '@mui/material';
 
 export const StyledTechStackContainer = styled(Grid)`
   && {
