@@ -26,9 +26,9 @@ import { SiStyledcomponents } from 'react-icons/si';
 import { useState } from 'react';
 
 export const TechStack = () => {
-  const [collapse2022, setCollapse2022] = useState(false);
-  const [collapse2021, setCollapse2021] = useState(false);
-  const [collapse2020, setCollapse2020] = useState(false);
+  const [collapse2022, setCollapse2022] = useState(true);
+  const [collapse2021, setCollapse2021] = useState(true);
+  const [collapse2020, setCollapse2020] = useState(true);
 
   const handleChange =
     (whichPanel: number) =>
