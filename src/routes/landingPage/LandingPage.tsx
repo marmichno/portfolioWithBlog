@@ -4,6 +4,8 @@ import { AboutMe } from './aboutMe/AboutMe';
 import { TechStack } from './techStack/TechStack';
 import { Statistics } from './statistics/Statistics';
 import { Projects } from './projects/Projects';
+import { BlogLatest } from './blogLatest/BlogLatest';
+import { ContactMe } from './contactMe/ContactMe';
 
 export const LandingPage = () => {
   return (
@@ -13,6 +15,8 @@ export const LandingPage = () => {
       <TechStack />
       <Statistics />
       <Projects />
+      <BlogLatest />
+      <ContactMe />
     </>
   );
 };

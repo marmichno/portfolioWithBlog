@@ -13,7 +13,7 @@ export const Projects = () => {
       <StyledMasonryWrapper columns={3} spacing={2}>
         {projects.map((val) => {
           return (
-            <StyledItem elevation={3}>
+            <StyledItem elevation={1}>
               <img
                 alt={val.name}
                 src={val.background}

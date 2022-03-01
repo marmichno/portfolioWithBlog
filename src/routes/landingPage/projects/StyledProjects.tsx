@@ -2,8 +2,6 @@ import styled from 'styled-components';
 // mui
 import { Grid, Paper } from '@mui/material';
 import { Masonry } from '@mui/lab';
-// images
-import bgImage from '../../../resources/images/background.png';
 
 export const StyledProjectsContainer = styled(Grid)`
   && {
@@ -29,7 +27,6 @@ export const StyledMasonryWrapper = styled(Masonry)`
 export const StyledItem = styled(({ bg, ...otherProps }) => (
   <Paper {...otherProps} />
 ))`
-  background-image: url(${(props) => (props.bg ? props.bg : '')});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

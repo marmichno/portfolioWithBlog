@@ -20,7 +20,7 @@ export const Hero = () => {
           Hi, I'm <span style={{ color: '#1976d2' }}>Marcin</span>
         </Typography>
         <Typography variant="h5" component="h2">
-          Selftaught frontend developer
+          Self-taught frontend developer
         </Typography>
         <Typography variant="body1" component="p">
           Courteous and enthusiastic, I am interested in IT and everything in
