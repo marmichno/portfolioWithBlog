@@ -52,6 +52,10 @@ export const StyledCardsWrapper = styled(Grid)`
   align-items: center;
   justify-content: space-around;
 
+  svg {
+    color: red;
+  }
+
   .MuiPaper-root {
     margin: 1em;
   }
