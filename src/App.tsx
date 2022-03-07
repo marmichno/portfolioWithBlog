@@ -1,7 +1,9 @@
 import './App.css';
+// components
+import { LandingPage } from '../src/routes/landingPage/LandingPage';
 
 const App = () => {
-  return <div className="App"></div>;
+  return <LandingPage />;
 };
 
 export default App;
