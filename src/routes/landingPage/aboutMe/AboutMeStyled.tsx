@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import { Typography } from '@mui/material';
 // images
 import aboutMeAvatarr from '../../../resources/images/aboutmeAvatarr.png';
+import PersonPinIcon from '@mui/icons-material/PersonPin';
 
 export const StyledAboutMeContainer = styled(Grid)`
   width: 100vw;
@@ -59,21 +60,39 @@ export const StyledImageWrapper = styled(Grid)`
 
 export const StyledTextWrapper = styled(Grid)`
   && {
-    max-width: 500px;
+    max-width: 550px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     margin-left: 5em;
+    border-left: 2px solid #1976d2;
+    position: relative;
   }
 
   p {
-    padding: 2em;
+    padding: 1em;
   }
 
   hr {
     background-color: #1976d2;
-    height: 3px;
-    width: 30%;
+    height: 2px;
+    width: 20%;
+    margin-left: 0.5em;
+    border: none;
+  }
+
+  button {
+    margin-left: 1em;
+  }
+`;
+
+export const StyledAboutMeIcon = styled(PersonPinIcon)`
+  && {
+    position: absolute;
+    left: -1.74em;
+    top: -80px;
+    width: 80px;
+    height: 80px;
   }
 `;

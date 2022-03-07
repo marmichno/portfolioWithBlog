@@ -6,6 +6,7 @@ import {
   StyledBackgroundText,
   StyledImageWrapper,
   StyledTextWrapper,
+  StyledAboutMeIcon,
 } from './AboutMeStyled';
 // mui
 import { Typography, Button } from '@mui/material';
@@ -25,6 +26,7 @@ export const AboutMe = () => {
       </StyledBackground>
       <StyledImageWrapper />
       <StyledTextWrapper>
+        <StyledAboutMeIcon />
         <Typography variant="body1" component="p">
           My adventure with programming started in highschool where I learned
           basics of technologies like CSS, HTML, JavaScript and PHP.

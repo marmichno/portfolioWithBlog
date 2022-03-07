@@ -45,8 +45,20 @@ export const StyledCollapsableWrapper = styled(Grid)`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 55%;
+
+    .MuiTimelineSeparator-root {
+      min-height: 200px;
+    }
+
+    .MuiTimelineContent-root {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
     .MuiPaper-root {
-      width: 60%;
+      width: 30%;
       text-align: center;
     }
     .MuiAccordion-root {
@@ -61,13 +73,14 @@ export const StyledCollapsableWrapper = styled(Grid)`
       flex-direction: column;
     }
     svg {
-      width: 50px;
-      height: 50px;
+      width: 80px;
+      height: 80px;
       color: #1976d2;
+      margin: 1em;
     }
 
-    p {
-      max-width: 90%;
+    .MuiTimelineConnector-root {
+      background-color: #1976d2;
     }
   }
 `;

@@ -11,8 +11,19 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from '@mui/material';
+// timeline
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import HotelIcon from '@mui/icons-material/Hotel';
+import RepeatIcon from '@mui/icons-material/Repeat';
 // icons
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { FaReact } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
@@ -26,22 +37,6 @@ import { SiStyledcomponents } from 'react-icons/si';
 import { useState } from 'react';
 
 export const TechStack = () => {
-  const [collapse2022, setCollapse2022] = useState(true);
-  const [collapse2021, setCollapse2021] = useState(true);
-  const [collapse2020, setCollapse2020] = useState(true);
-
-  const handleChange =
-    (whichPanel: number) =>
-    (event: React.SyntheticEvent, newExpanded: boolean) => {
-      if (whichPanel === 2022) {
-        setCollapse2022((collapse2022) => !collapse2022);
-      } else if (whichPanel === 2021) {
-        setCollapse2021((collapse2021) => !collapse2021);
-      } else if (whichPanel === 2020) {
-        setCollapse2020((collapse2020) => !collapse2020);
-      }
-    };
-
   return (
     <StyledTechStackContainer>
       <StyledTechGridWrapper>
@@ -56,7 +51,87 @@ export const TechStack = () => {
         <AiFillHtml5 style={{ color: '#D46D31' }} />
       </StyledTechGridWrapper>
       <StyledCollapsableWrapper>
-        <Accordion expanded={collapse2022} onChange={handleChange(2022)}>
+        <Typography variant="h2" component="span">
+          Tech
+        </Typography>
+        <Timeline position="alternate">
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0' }}
+              align="right"
+              variant="body2"
+              color="text.secondary"
+            >
+              Build five non commercial projects.
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <SiTypescript />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Typography variant="h4" component="span">
+                2022
+              </Typography>
+              <Typography>
+                materialUi, react-hook-form, redux-thunk, basics of
+                react-native.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0' }}
+              align="right"
+              variant="body2"
+              color="text.secondary"
+            >
+              Build nine non commercial projects.
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <FaReact style={{ color: '#5ED3F3' }} />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Typography variant="h4" component="span">
+                2021
+              </Typography>
+              <Typography>
+                typeScript, react, browser router, toastify, framer motion,
+                axios , Redux, formik, yup, react testing library, SASS with BEM
+                notation and CSS modules, npm, git, jest.
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0' }}
+              align="right"
+              variant="body2"
+              color="text.secondary"
+            >
+              Build three commercial projects.
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <IoLogoJavascript style={{ color: '#EFD81D' }} />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Typography variant="h4" component="span">
+                2020
+              </Typography>
+              <Typography>
+                HTML, CSS, javaScript, fetch API, postman, chartJS.
+              </Typography>
+              <Typography>finish two courses:</Typography>
+              <Typography>- responsive web design</Typography>
+              <Typography>- data structures and algorithms.</Typography>
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
+        {/* <Accordion expanded={collapse2022} onChange={handleChange(2022)}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1d-content"
@@ -113,7 +188,7 @@ export const TechStack = () => {
             </Typography>
             <Typography>- build three non commercial projects.</Typography>
           </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
       </StyledCollapsableWrapper>
     </StyledTechStackContainer>
   );
