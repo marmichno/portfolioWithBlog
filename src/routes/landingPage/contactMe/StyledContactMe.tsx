@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Grid } from '@mui/material';
 // img
 import contactMe from '../../../resources/images/contactMe.png';
-import bgImage from '../../../resources/images/background.png';
+import bgImage from '../../../resources/images/background3.png';
 
 export const StyledContactMeContainer = styled(Grid)`
   width: 100vw;
