@@ -94,5 +94,6 @@ export const StyledAboutMeIcon = styled(PersonPinIcon)`
     top: -80px;
     width: 80px;
     height: 80px;
+    color: #1976d2;
   }
 `;

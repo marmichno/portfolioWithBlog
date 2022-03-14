@@ -12,8 +12,8 @@ export const StyledTechStackContainer = styled(Grid)`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
     position: relative;
   }
 `;
